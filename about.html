@@ -2,114 +2,442 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[SYSTEM_REPORT] 상수 룸싸롱 가성비 투명 분석서 - about</title>
-    <meta name="description" content="상수 룸싸롱의 투명 운영 개요 리포트! 스노든 폭로 무결성 대책과 공간 이완 공명을 담은 분석.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-acid-yellow">
+    <title>상수 룸싸롱 TOP5 | 찐추천 5選 - 상세 정보</title>
+    <meta name="description" content="상수 룸싸롱 TOP5 진짜 정보 다 모았다. 가격, 분위기, 서비스 리얼 후기 총정리. 브로가 직접 발로 뛰고 쓴 정보, 지금 확인해봐!">
+    <meta name="keywords" content="상수 룸싸롱, 상수 룸싸롱 추천, 상수 룸싸롱 TOP5, 상수 술집, 상수 유흥, 상수 가성비 룸싸롱, 상수 룸싸롱 정보">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://t3b05-ss-room-top5-1.vercel.app/info">
+    <meta property="og:title" content="상수 룸싸롱 TOP5 | 찐추천 5選 - 상세 정보">
+    <meta property="og:description" content="상수 룸싸롱 TOP5 진짜 정보, 브로가 다 알려준다. 가격대, 분위기, 서비스 핵심만 콕콕!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://t3b05-ss-room-top5-1.vercel.app/info">
+    <meta property="og:locale" content="ko_KR">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <style>
-        body {
-            background-color: #05020c;
-            color: #e2e8f0;
-            font-family: 'Outfit', 'Inter', sans-serif;
+        /* ===== BRUTALIST RESET & BASE ===== */
+        * {
             margin: 0;
-            padding: 40px 20px;
-            line-height: 1.8;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, 'IBM Plex Mono', monospace;
         }
-        .report-shell {
-            max-width: 800px;
-            margin: 0 auto;
-            background: rgba(18, 10, 36, 0.75);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            border-radius: 16px;
-            padding: 40px;
-            box-shadow: 0 0 25px rgba(0, 240, 255, 0.15);
-            backdrop-filter: blur(12px);
+
+        body {
+            background: #1a1a1a;
+            color: #e0e0e0;
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+            line-height: 1.7;
         }
-        h1, h2 {
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(
+                0deg,
+                transparent,
+                transparent 4px,
+                rgba(255, 215, 0, 0.03) 4px,
+                rgba(255, 215, 0, 0.03) 8px
+            );
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        a {
+            color: #ffd700;
+            text-decoration: underline wavy rgba(255, 215, 0, 0.3);
+            text-underline-offset: 4px;
+            transition: all 0.2s;
+        }
+
+        a:hover {
             color: #fff;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-            padding-bottom: 10px;
-            text-shadow: 0 0 8px #ff007c;
+            text-decoration-color: #ffd700;
+            text-shadow: 0 0 12px rgba(255, 215, 0, 0.5);
         }
-        p {
-            font-size: 1.03rem;
+
+        img, svg {
+            max-width: 100%;
+            display: block;
+            filter: grayscale(0.3) contrast(1.2);
         }
-        .highlight {
-            color: #00f0ff;
-            font-weight: bold;
+
+        /* ===== LAYOUT ===== */
+        .site-wrap {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 24px 60px;
+            position: relative;
+            z-index: 1;
         }
-        .review-box {
-            background: rgba(0, 0, 0, 0.4);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 8px;
+
+        /* ===== HEADER ===== */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 0 20px;
+            border-bottom: 3px solid #ffd700;
+            margin-bottom: 40px;
+            position: relative;
+            flex-wrap: wrap;
         }
-        .btn-link {
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1.8rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+            color: #ffd700;
+            text-shadow: 2px 2px 0 #000, 4px 4px 0 rgba(255, 215, 0, 0.2);
+        }
+
+        .logo span {
+            background: #ffd700;
+            color: #1a1a1a;
+            padding: 0 8px;
+            transform: skew(-12deg);
             display: inline-block;
-            margin-top: 25px;
-            color: #00f0ff;
-            text-decoration: none;
-            border: 1px solid #00f0ff;
-            padding: 10px 20px;
-            border-radius: 30px;
-            background: rgba(0, 240, 255, 0.05);
+            font-size: 1.2rem;
+            margin-left: 6px;
         }
-        .btn-link:hover {
-            background: #00f0ff;
-            color: #000;
-            box-shadow: 0 0 15px #00f0ff;
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 6px 12px;
+            border: 2px solid transparent;
+            transition: 0.2s;
+            text-decoration: none;
+            color: #ccc;
+        }
+
+        nav a:hover {
+            border-color: #ffd700;
+            color: #ffd700;
+            background: rgba(255, 215, 0, 0.08);
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 8px;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 28px;
+            height: 3px;
+            background: #ffd700;
+            border-radius: 0;
+        }
+
+        @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+
+            nav {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                background: #222;
+                padding: 20px;
+                margin-top: 12px;
+                border: 2px solid #ffd700;
+            }
+
+            nav.active {
+                display: flex;
+            }
+
+            nav a {
+                font-size: 1.3rem;
+                padding: 12px;
+                border-bottom: 1px solid #333;
+                width: 100%;
+                text-align: center;
+            }
+
+            header {
+                padding-bottom: 12px;
+            }
+        }
+
+        /* ===== TEL LINK ===== */
+        .tel-link {
+            display: inline-block;
+            background: #ffd700;
+            color: #1a1a1a;
+            padding: 10px 24px;
+            font-weight: 800;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            text-decoration: none;
+            border: 3px solid #fff;
+            box-shadow: 6px 6px 0 rgba(255, 215, 0, 0.3);
+            transition: 0.15s;
+            letter-spacing: 1px;
+        }
+
+        .tel-link:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 10px 10px 0 rgba(255, 215, 0, 0.4);
+            background: #fff;
+            color: #1a1a1a;
+            border-color: #ffd700;
+        }
+
+        /* ===== PAGE SPECIFIC ===== */
+        .page-title {
+            font-size: 3.2rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: -2px;
+            color: #ffd700;
+            text-shadow: 3px 3px 0 #000;
+            border-left: 8px solid #ffd700;
+            padding-left: 20px;
+            margin-bottom: 40px;
+            line-height: 1.1;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .info-card {
+            background: #222;
+            border: 2px solid #333;
+            padding: 28px 24px;
+            box-shadow: 8px 8px 0 rgba(255, 215, 0, 0.07);
+            transition: 0.2s;
+        }
+
+        .info-card:hover {
+            border-color: #ffd700;
+            box-shadow: 12px 12px 0 rgba(255, 215, 0, 0.12);
+            transform: translate(-2px, -2px);
+        }
+
+        .info-card h3 {
+            font-size: 1.8rem;
+            color: #ffd700;
+            text-transform: uppercase;
+            letter-spacing: -0.5px;
+            margin-bottom: 12px;
+            border-bottom: 2px dashed #444;
+            padding-bottom: 8px;
+        }
+
+        .info-card .price-tag {
+            display: inline-block;
+            background: #ffd700;
+            color: #1a1a1a;
+            font-weight: 800;
+            padding: 4px 16px;
+            font-size: 1.2rem;
+            transform: skew(-8deg);
+            margin-bottom: 14px;
+        }
+
+        .info-card p {
+            margin-bottom: 12px;
+            font-size: 1rem;
+            color: #ccc;
+        }
+
+        .info-card .badge {
+            display: inline-block;
+            background: #2a2a2a;
+            border: 1px solid #ffd700;
+            padding: 2px 12px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            color: #ffd700;
+            margin-right: 6px;
+            margin-top: 8px;
+        }
+
+        .faq-section {
+            margin-top: 60px;
+            border-top: 3px solid #333;
+            padding-top: 40px;
+        }
+
+        .faq-section h2 {
+            font-size: 2.4rem;
+            font-weight: 800;
+            color: #ffd700;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            letter-spacing: -1px;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            border: 1px solid #333;
+            padding: 18px 20px;
+            background: #1f1f1f;
+        }
+
+        .faq-item dt {
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: #ffd700;
+            cursor: default;
+            margin-bottom: 6px;
+        }
+
+        .faq-item dd {
+            color: #bbb;
+            font-size: 0.95rem;
+            padding-left: 12px;
+            border-left: 3px solid #ffd700;
+        }
+
+        .bro-note {
+            background: #1a1a1a;
+            border: 3px solid #ffd700;
+            padding: 24px 28px;
+            margin: 40px 0;
+            font-size: 1.1rem;
+            color: #ddd;
+            position: relative;
+        }
+
+        .bro-note::before {
+            content: 'BRO NOTE 🤙';
+            position: absolute;
+            top: -14px;
+            left: 20px;
+            background: #1a1a1a;
+            padding: 0 12px;
+            font-weight: 800;
+            color: #ffd700;
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+        }
+
+        @media (max-width: 768px) {
+            .page-title {
+                font-size: 2rem;
+                padding-left: 14px;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .info-card {
+                padding: 20px 16px;
+            }
+
+            .info-card h3 {
+                font-size: 1.4rem;
+            }
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0 10px;
+            border-top: 2px solid #333;
+            color: #666;
+            font-size: 0.85rem;
+            margin-top: 60px;
+        }
+
+        footer a {
+            color: #888;
+        }
+
+        footer a:hover {
+            color: #ffd700;
         }
     </style>
 </head>
 <body>
 
-<div class="report-shell">
-    <h1>REPORT: 상수 가성비 룸싸롱 무결성 보안 프로토콜</h1>
-    <p>
-        어이 브로, 형이 정교하게 오케스트레이션한 <span class="highlight">상수 룸싸롱 투명 가이드망</span>의 소개 분석 보고서이다.
-        우리는 상수역 핵심 2차 골목 한가운데에서 일과의 고단함에 지친 직장인 브로들의 대뇌 인프라 피로를 청소하고, 
-        가장 정직한 정찰 요율을 선언하여 불량 삐끼들의 악질 요금 오버플로우 바가지 꼼수를 완벽 격리하기 위해 탄생한 정보망이다.
-    </p>
+<div class="site-wrap">
 
-    <h2>🔒 NSA PRISM 도청 거미줄 폭로를 관통하는 프라이버시 물리 법칙</h2>
-    <p>
-        앞선 메인 쉘에서 소개했듯, 에드워드 스노든이 폭로한 NSA의 프리즘(PRISM)망은 우리의 모든 커뮤니케이션 패킷을 몰래 훔쳐보는 악의적인 중앙 집권식 감시망이었지. 
-        상수 일대의 양심 없는 삐끼들도 똑같이 복잡한 요금제 장난과 변종 추가금 옵션으로 브로들의 대뇌 버퍼를 교란시킨다.
-    </p>
-    <p>
-        우리는 이러한 인지 기만망에 대항하여, 100% 깔끔하게 작동하는 다이렉트 핫라인(<span class="highlight">010-6279-0862</span>)을 통해서만 예약 세션을 활성화한다. 
-        그 어떤 복잡한 꼼수나 변형 추가금 마찰이 들어설 여지를 칼같이 삭제해버렸기 때문에, 
-        방문하는 비즈니스 브로들은 오직 마음 편안하게 음향 시스템에 자기 목소리를 공명시켜 뇌 세포의 이완을 체감하는 힐링에만 포커싱할 수 있어 브로.
-    </p>
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            ROOM<span>TOP5</span>
+        </div>
 
-    <h2>📊 상수 오피스 벨트 실제 이용자 UGC 피드</h2>
-    <p>
-        다음 검증 피드는 상수 비즈니스 단지에서 직접 전화를 걸어 예약을 확보하고 요금 스트레스 없이 2차를 완수한 유저들의 내돈내산 요약 정보이다:
-    </p>
-    
-    <div class="review-box">
-        <h3>"상수 무역 파트 정브로" ⭐⭐⭐⭐⭐</h3>
-        <p>프로젝트 성료 후 거래처 모시고 방문했는데 요금 체계가 완벽히 고정 상수로 운영되어 골치 아픈 마찰이 1도 없었습니다. 음향 무선 하드웨어의 출력이 엄청 짱짱하더군요.</p>
+        <nav id="main-nav">
+            <a href="index.html">홈</a>
+            <a href="info.html" style="color:#ffd700; border-color:#ffd700;">정보</a>
+            <a href="top5.html">TOP5</a>
+            <a href="review.html">후기</a>
+            <a href="reserve.html">예약</a>
+        </nav>
+
+        <button class="hamburger" id="hamburger-btn" aria-label="메뉴 열기">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <!-- PAGE CONTENT -->
+    <h1 class="page-title">상수 룸싸롱<br>찐 정보</h1>
+
+    <div class="bro-note">
+        야, 브로! 내가 상수에서 직접 발로 뛰고, 지갑 털고, 진짜 경험한 정보만 모아왔어.<br>
+        가격부터 분위기, 서비스까지 — 여기 있는 건 다 내가 확인한 거니까 믿어도 돼. 💯
     </div>
 
-    <div class="review-box">
-        <h3>"상수 지식산업센터 이팀장" ⭐⭐⭐⭐⭐</h3>
-        <p>인터넷 가짜 대행사 광고 패킷에 수없이 털렸는데, 형이 인증한 010-6279-0862 통화 연결 즉시 아주 훌륭한 룸을 잡았습니다. 가격 무결성 100% 만족입니다!</p>
-    </div>
+    <!-- INFO GRID -->
+    <div class="info-grid">
+        <div class="info-card">
+            <h3>🚀 더 플래티넘</h3>
+            <div class="price-tag">1인 25~35만원</div>
+            <p><strong>분위기:</strong> 하이엔드 감성. 조명이 은은하고 인테리어에 진심인 곳. 데이트나 비즈니스 미팅도 좋아.</p>
+            <p><strong>서비스:</strong> 직원분들이 프로페셔널한데 친근해. 안주 퀄리티도 이 가격대에서 최고.</p>
+            <p><strong>브로의 한마디:</strong> "처음 가면 약간 긴장되는데, 한 번 적응하면 자꾸 생각나는 곳. 위스키 추천!"</p>
+            <span class="badge">#가성비갑</span>
+            <span class="badge">#분위기최고</span>
+        </div>
 
-    <div class="review-box">
-        <h3>"상수 유통물류 대행 한과장" ⭐⭐⭐⭐⭐</h3>
-        <p>덤터기 실랑이로 뇌 밸런스를 갉아먹지 않아서 너무나 든든한 가이드 시스템입니다. 상수에서 룸싸롱 갈 거면 핫라인 전화가 단연 원탑입니다!</p>
-    </div>
-
-    <p>
-        더 이상 악질 삐끼 정보망의 오염된 미끼 패킷에 네 소중한 자산 리소스를 낭비하지 마라.
-        아래 핫라인으로 예약 전화를 걸어 상수 최고의 VIP 룸을 무조건 마운트해라 브로!
-    </p>
-
-    <a href="index.html" class="btn-link">← 메인 콘솔로 복귀</a>
-    <a href="tel:010-6279-0862" class="btn-link" style="border-color: #ff007c; color: #fff; background: rgba(255, 0, 124, 0.4);">📞 즉시 예약 통화</a>
-</div>
-
+        <div class="info-card">
+            <h3>🎤 보이스 라운지</h3>
+            <div class="price-tag">1인 20~30만원</div>
+            <p><strong>분위기:</strong> 라이브 공연 있는 룸싸롱. 노래방 기기 진짜 좋고, 사운드 시스템이 미쳤어.</p>
+            <p><strong>서비스:</strong> 매니저님이 분위기 메이킹 끝내줌. 혼자 와도 외롭지 않은 곳.</p>
+            <p><strong>브로의 한마디:</strong> "친구들끼리 노래방 가려다가 여기 정착함. 3차까지 가기 좋아."</p>
+            <span
 </body>
 </html>
