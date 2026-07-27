@@ -1,443 +1,95 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-acid-yellow">
-    <title>상수 룸싸롱 TOP5 | 찐추천 5選 - 상세 정보</title>
-    <meta name="description" content="상수 룸싸롱 TOP5 진짜 정보 다 모았다. 가격, 분위기, 서비스 리얼 후기 총정리. 브로가 직접 발로 뛰고 쓴 정보, 지금 확인해봐!">
-    <meta name="keywords" content="상수 룸싸롱, 상수 룸싸롱 추천, 상수 룸싸롱 TOP5, 상수 술집, 상수 유흥, 상수 가성비 룸싸롱, 상수 룸싸롱 정보">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://t3b05-ss-room-top5-1.vercel.app/info">
-    <meta property="og:title" content="상수 룸싸롱 TOP5 | 찐추천 5選 - 상세 정보">
-    <meta property="og:description" content="상수 룸싸롱 TOP5 진짜 정보, 브로가 다 알려준다. 가격대, 분위기, 서비스 핵심만 콕콕!">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://t3b05-ss-room-top5-1.vercel.app/info">
-    <meta property="og:locale" content="ko_KR">
-    <meta name="twitter:card" content="summary_large_image">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-    <style>
-        /* ===== BRUTALIST RESET & BASE ===== */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Courier New', Courier, 'IBM Plex Mono', monospace;
-        }
-
-        body {
-            background: #1a1a1a;
-            color: #e0e0e0;
-            min-height: 100vh;
-            position: relative;
-            overflow-x: hidden;
-            line-height: 1.7;
-        }
-
-        body::before {
-            content: '';
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: repeating-linear-gradient(
-                0deg,
-                transparent,
-                transparent 4px,
-                rgba(255, 215, 0, 0.03) 4px,
-                rgba(255, 215, 0, 0.03) 8px
-            );
-            pointer-events: none;
-            z-index: 0;
-        }
-
-        a {
-            color: #ffd700;
-            text-decoration: underline wavy rgba(255, 215, 0, 0.3);
-            text-underline-offset: 4px;
-            transition: all 0.2s;
-        }
-
-        a:hover {
-            color: #fff;
-            text-decoration-color: #ffd700;
-            text-shadow: 0 0 12px rgba(255, 215, 0, 0.5);
-        }
-
-        img, svg {
-            max-width: 100%;
-            display: block;
-            filter: grayscale(0.3) contrast(1.2);
-        }
-
-        /* ===== LAYOUT ===== */
-        .site-wrap {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px 24px 60px;
-            position: relative;
-            z-index: 1;
-        }
-
-        /* ===== HEADER ===== */
-        header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 16px 0 20px;
-            border-bottom: 3px solid #ffd700;
-            margin-bottom: 40px;
-            position: relative;
-            flex-wrap: wrap;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-size: 1.8rem;
-            font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: -1px;
-            color: #ffd700;
-            text-shadow: 2px 2px 0 #000, 4px 4px 0 rgba(255, 215, 0, 0.2);
-        }
-
-        .logo span {
-            background: #ffd700;
-            color: #1a1a1a;
-            padding: 0 8px;
-            transform: skew(-12deg);
-            display: inline-block;
-            font-size: 1.2rem;
-            margin-left: 6px;
-        }
-
-        nav {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        nav a {
-            font-size: 1.1rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            padding: 6px 12px;
-            border: 2px solid transparent;
-            transition: 0.2s;
-            text-decoration: none;
-            color: #ccc;
-        }
-
-        nav a:hover {
-            border-color: #ffd700;
-            color: #ffd700;
-            background: rgba(255, 215, 0, 0.08);
-        }
-
-        .hamburger {
-            display: none;
-            flex-direction: column;
-            gap: 5px;
-            cursor: pointer;
-            background: none;
-            border: none;
-            padding: 8px;
-        }
-
-        .hamburger span {
-            display: block;
-            width: 28px;
-            height: 3px;
-            background: #ffd700;
-            border-radius: 0;
-        }
-
-        @media (max-width: 768px) {
-            .hamburger {
-                display: flex;
-            }
-
-            nav {
-                display: none;
-                width: 100%;
-                flex-direction: column;
-                background: #222;
-                padding: 20px;
-                margin-top: 12px;
-                border: 2px solid #ffd700;
-            }
-
-            nav.active {
-                display: flex;
-            }
-
-            nav a {
-                font-size: 1.3rem;
-                padding: 12px;
-                border-bottom: 1px solid #333;
-                width: 100%;
-                text-align: center;
-            }
-
-            header {
-                padding-bottom: 12px;
-            }
-        }
-
-        /* ===== TEL LINK ===== */
-        .tel-link {
-            display: inline-block;
-            background: #ffd700;
-            color: #1a1a1a;
-            padding: 10px 24px;
-            font-weight: 800;
-            font-size: 1.1rem;
-            text-transform: uppercase;
-            text-decoration: none;
-            border: 3px solid #fff;
-            box-shadow: 6px 6px 0 rgba(255, 215, 0, 0.3);
-            transition: 0.15s;
-            letter-spacing: 1px;
-        }
-
-        .tel-link:hover {
-            transform: translate(-2px, -2px);
-            box-shadow: 10px 10px 0 rgba(255, 215, 0, 0.4);
-            background: #fff;
-            color: #1a1a1a;
-            border-color: #ffd700;
-        }
-
-        /* ===== PAGE SPECIFIC ===== */
-        .page-title {
-            font-size: 3.2rem;
-            font-weight: 900;
-            text-transform: uppercase;
-            letter-spacing: -2px;
-            color: #ffd700;
-            text-shadow: 3px 3px 0 #000;
-            border-left: 8px solid #ffd700;
-            padding-left: 20px;
-            margin-bottom: 40px;
-            line-height: 1.1;
-        }
-
-        .info-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 30px;
-            margin-bottom: 50px;
-        }
-
-        .info-card {
-            background: #222;
-            border: 2px solid #333;
-            padding: 28px 24px;
-            box-shadow: 8px 8px 0 rgba(255, 215, 0, 0.07);
-            transition: 0.2s;
-        }
-
-        .info-card:hover {
-            border-color: #ffd700;
-            box-shadow: 12px 12px 0 rgba(255, 215, 0, 0.12);
-            transform: translate(-2px, -2px);
-        }
-
-        .info-card h3 {
-            font-size: 1.8rem;
-            color: #ffd700;
-            text-transform: uppercase;
-            letter-spacing: -0.5px;
-            margin-bottom: 12px;
-            border-bottom: 2px dashed #444;
-            padding-bottom: 8px;
-        }
-
-        .info-card .price-tag {
-            display: inline-block;
-            background: #ffd700;
-            color: #1a1a1a;
-            font-weight: 800;
-            padding: 4px 16px;
-            font-size: 1.2rem;
-            transform: skew(-8deg);
-            margin-bottom: 14px;
-        }
-
-        .info-card p {
-            margin-bottom: 12px;
-            font-size: 1rem;
-            color: #ccc;
-        }
-
-        .info-card .badge {
-            display: inline-block;
-            background: #2a2a2a;
-            border: 1px solid #ffd700;
-            padding: 2px 12px;
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            color: #ffd700;
-            margin-right: 6px;
-            margin-top: 8px;
-        }
-
-        .faq-section {
-            margin-top: 60px;
-            border-top: 3px solid #333;
-            padding-top: 40px;
-        }
-
-        .faq-section h2 {
-            font-size: 2.4rem;
-            font-weight: 800;
-            color: #ffd700;
-            text-transform: uppercase;
-            margin-bottom: 30px;
-            letter-spacing: -1px;
-        }
-
-        .faq-item {
-            margin-bottom: 20px;
-            border: 1px solid #333;
-            padding: 18px 20px;
-            background: #1f1f1f;
-        }
-
-        .faq-item dt {
-            font-weight: 700;
-            font-size: 1.2rem;
-            color: #ffd700;
-            cursor: default;
-            margin-bottom: 6px;
-        }
-
-        .faq-item dd {
-            color: #bbb;
-            font-size: 0.95rem;
-            padding-left: 12px;
-            border-left: 3px solid #ffd700;
-        }
-
-        .bro-note {
-            background: #1a1a1a;
-            border: 3px solid #ffd700;
-            padding: 24px 28px;
-            margin: 40px 0;
-            font-size: 1.1rem;
-            color: #ddd;
-            position: relative;
-        }
-
-        .bro-note::before {
-            content: 'BRO NOTE 🤙';
-            position: absolute;
-            top: -14px;
-            left: 20px;
-            background: #1a1a1a;
-            padding: 0 12px;
-            font-weight: 800;
-            color: #ffd700;
-            font-size: 0.9rem;
-            letter-spacing: 2px;
-        }
-
-        @media (max-width: 768px) {
-            .page-title {
-                font-size: 2rem;
-                padding-left: 14px;
-            }
-
-            .info-grid {
-                grid-template-columns: 1fr;
-                gap: 20px;
-            }
-
-            .info-card {
-                padding: 20px 16px;
-            }
-
-            .info-card h3 {
-                font-size: 1.4rem;
-            }
-        }
-
-        footer {
-            text-align: center;
-            padding: 40px 0 10px;
-            border-top: 2px solid #333;
-            color: #666;
-            font-size: 0.85rem;
-            margin-top: 60px;
-        }
-
-        footer a {
-            color: #888;
-        }
-
-        footer a:hover {
-            color: #ffd700;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>상수 룸싸롱 정보</title>
+<meta name="description" content="상수 지역 룸싸롱을 심층 분석하고, 인원·시간대·목적에 따라 최적 경로와 안전 포인트를 제시하는 종합 가이드.">
+<meta name="keywords" content="상수, 룸싸롱, 정보, 나이트 트랜짓, 방문 팁">
+<link rel="canonical" href="https://sangsu-room-guide.link-hub.org/about.html">
+<meta property="og:title" content="상수 룸싸롱 정보 — 나이트 트랜짓 맵">
+<meta property="og:description" content="상수 지역 룸싸롱을 나이트 트랜짓 맵으로 시각화, 상황별 최적 선택과 안전 팁을 제공합니다.">
+<meta property="og:url" content="https://sangsu-room-guide.link-hub.org/about.html">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<header class="r-head-slxd">
+  <nav>
+    <ul class="r-txt-i6l4">
+      <li><a href="/">홈</a></li>
+      <li><a href="/top5">TOP5</a></li>
+      <li><a href="/info">정보</a></li>
+      <li><a href="/contact">연락처</a></li>
+    </ul>
+  </nav>
+</header>
 
-<div class="site-wrap">
+<main>
+  <section class="r-head-slxd">
+    <h1>상수 룸싸롱 <strong>Night Transit Map</strong> 소개</h1>
+    <p>
+      밤이 깊어질수록 거리의 흐름은 달라집니다. 상수 역 주변의 룸싸롱을 그냥 무작정 찾는다면, 시간과 인원에 맞는 최적 경로를 놓치게 됩니다. 여기서 제시하는 <strong>Night Transit Map</strong>은 시간대별 유동 인구와 교통 흐름을 시각화해, 방문 목적에 가장 알맞은 로케이션과 이동 루트를 한눈에 파악하도록 설계되었습니다.
+    </p>
+    <p>
+      이 맵은 단순히 “가장 인기 있는 곳”을 나열하지 않습니다. 대신, <em>인원 규모·방문 목적·시간대</em>라는 세 가지 핵심 축을 기준으로 각각의 장소가 제공하는 환경을 교차 분석합니다. 결과적으로 사용자는 현재 상황에 맞는 “맞춤형 경로”와 “안전 포인트”를 즉시 확인할 수 있습니다.
+    </p>
+  </section>
 
-    <!-- HEADER -->
-    <header>
-        <div class="logo">
-            ROOM<span>TOP5</span>
-        </div>
+  <section class="r-head-slxd">
+    <h2>인원 규모에 따른 선택 포인트</h2>
+    <p>
+      두 사람, 네 사람, 혹은 대규모 파티까지 인원에 따라 요구되는 공간과 서비스를 구분해야 합니다. 2~3인 소규모 그룹은 프라이버시와 서비스 집중도가 높은 소형 라운지를 선호하는 반면, 5인 이상 대규모 그룹은 다목적 라운지와 별도 파티룸을 제공하는 곳을 선택해야 합니다. 인원별로 가장 효율적인 이동 시간과 대기 시간을 고려한 스케줄링이 필요합니다.
+    </p>
+    <p>
+      Night Transit Map에서는 인원 구분에 따라 “대기 최소화 구간”과 “최적 대기실 위치”를 색상으로 구분해 표시합니다. 예를 들어, 4인 이상 그룹은 지하철 2호선 상수역 3번 출구에서 도보 5분 이내에 위치한 라운지를 선택하면, 교통 혼잡을 피하면서도 사전 예약 없이 입장 가능한 옵션을 빠르게 찾을 수 있습니다.
+    </p>
+  </section>
 
-        <nav id="main-nav">
-            <a href="index.html">홈</a>
-            <a href="info.html" style="color:#ffd700; border-color:#ffd700;">정보</a>
-            <a href="top5.html">TOP5</a>
-            <a href="review.html">후기</a>
-            <a href="reserve.html">예약</a>
-        </nav>
+  <section class="r-head-slxd">
+    <h2>시간대별 방문 팁</h2>
+    <p>
+      야간 20시 이후부터 새벽 2시까지는 인구 흐름이 급격히 변합니다. 이 시기에 가장 중요한 것은 <strong>안전한 이동 경로</strong>와 <strong>시간대 맞춤 할인</strong> 정보를 파악하는 것입니다. 맵은 20시~22시, 22시~00시, 00시~02시 세 구간으로 나누어, 각 구간별 가장 활발히 운영되는 라운지와 교통 연결 고리를 시각적으로 제시합니다.
+    </p>
+    <p>
+      예를 들어, 22시 이후에는 특정 라운지가 ‘Late Night Bonus’를 제공하는 경우가 있습니다. 이를 놓치지 않기 위해서는 해당 라운지 주변에 위치한 ‘라이트스탑’(소형 편의점)과 ‘시큐리티 체커’(보안 요원) 위치를 확인하고, 이동 경로를 사전에 계획하는 것이 필수입니다. Night Transit Map은 이런 정보를 실시간 기반이 아닌, 과거 데이터 기반으로 예측해 미리 안내합니다.
+    </p>
+  </section>
 
-        <button class="hamburger" id="hamburger-btn" aria-label="메뉴 열기">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-    </header>
+  <section class="r-head-slxd">
+    <h2>방문 목적별 체크리스트</h2>
+    <p>
+      목적에 따라 요구되는 서비스가 크게 달라집니다. 비즈니스 미팅, 친목 모임, 혹은 특별 이벤트 등 각각에 맞는 룸싸롱을 선택해야 합니다. 비즈니스 목적이라면 프라이빗 회의실과 고속 무선 인터넷이 필수이며, 친목 모임이라면 분위기와 음악, 음료 서비스가 큰 비중을 차지합니다. 이벤트 목적의 경우, 무대 설비와 조명, 별도 주류 바가 제공되는지를 확인해야 합니다.
+    </p>
+    <p>
+      Night Transit Map에서는 이러한 목적별 ‘핵심 체크리스트’를 아이콘 형태로 오버레이합니다. 사용자는 체크리스트를 클릭해 해당 라운지가 목적에 부합하는지 즉시 확인하고, 필요 시 대체 옵션을 제시받을 수 있습니다. 이렇게 하면 “내가 원하는 서비스가 없는 라운지”에 머무는 불필요한 시간을 절감할 수 있습니다.
+    </p>
+  </section>
 
-    <!-- PAGE CONTENT -->
-    <h1 class="page-title">상수 룸싸롱<br>찐 정보</h1>
+  <section class="r-head-slxd">
+    <h2>안전 포인트와 비상 대응</h2>
+    <p>
+      나이트 트랜짓에서는 보안도 핵심 요소입니다. 라운지 주변에 위치한 24시간 순찰 경찰서, 가까운 병원, 그리고 ‘SOS 키오스크’ 위치를 맵에 표시해 두었습니다. 또한, 각 라운지마다 비상 연락망이 존재하는지 여부를 색상으로 구분해, 위급 상황 시 빠르게 대응할 수 있도록 도와줍니다.
+    </p>
+    <p>
+      특히, 대규모 인원이 모이는 라운지는 사전 예약 시 ‘비상 연락 담당자’를 지정하도록 권장합니다. 이 담당자는 현장에서 발생할 수 있는 문제에 대해 즉시 대응할 수 있는 인력을 미리 배치합니다. Night Transit Map은 이러한 비상 대응 흐름을 단계별로 시각화해, 사용자가 위험 상황에서도 침착하게 행동할 수 있도록 설계되었습니다.
+    </p>
+  </section>
 
-    <div class="bro-note">
-        야, 브로! 내가 상수에서 직접 발로 뛰고, 지갑 털고, 진짜 경험한 정보만 모아왔어.<br>
-        가격부터 분위기, 서비스까지 — 여기 있는 건 다 내가 확인한 거니까 믿어도 돼. 💯
-    </div>
+  <section class="r-head-slxd">
+    <h2>자주 묻는 질문(FAQ)</h2>
+    <ul class="r-txt-i6l4">
+      <li><strong>Q: 밤 1시 이후에도 라운지를 이용할 수 있나요?</strong><br>대부분 라운지는 02시까지 영업하지만, 일부는 03시까지 연장 운영합니다. Night Transit Map에서 ‘연장 영업 라운지’를 별도 색상으로 표시하니 확인하십시오.</li>
+      <li><strong>Q: 대규모 파티를 예약하려면 어떻게 해야 하나요?</strong><br>대규모 파티는 사전 예약이 필수이며, 라운지마다 최소 인원 및 보증금 정책이 다릅니다. 맵의 ‘대규모 파티 전용 라운지’ 구역을 클릭하면 상세 조건과 연락처를 바로 확인할 수 있습니다.</li>
+      <li><strong>Q: 교통이 불편한 경우 대체 이동 수단은?</strong><br>인근에 위치한 ‘시프트 택시’와 ‘라이트 전동 스쿠터’ 스테이션이 맵에 표시됩니다. 특히 새벽 시간대에는 택시 호출이 지연될 수 있으니, 사전에 스쿠터 대여를 예약하는 것이 안전합니다.</li>
+      <li><strong>Q: 라운지 내부에서 촬영이 가능한가요?</strong><br>대부분 라운지는 사전 동의를 얻으면 촬영이 가능하지만, 특정 라운지는 ‘촬영 금지 구역’으로 지정되어 있습니다. Night Transit Map에서 촬영 가능 구역을 색으로 구분해 안내합니다.</li>
+    </ul>
+  </section>
+</main>
 
-    <!-- INFO GRID -->
-    <div class="info-grid">
-        <div class="info-card">
-            <h3>🚀 더 플래티넘</h3>
-            <div class="price-tag">1인 25~35만원</div>
-            <p><strong>분위기:</strong> 하이엔드 감성. 조명이 은은하고 인테리어에 진심인 곳. 데이트나 비즈니스 미팅도 좋아.</p>
-            <p><strong>서비스:</strong> 직원분들이 프로페셔널한데 친근해. 안주 퀄리티도 이 가격대에서 최고.</p>
-            <p><strong>브로의 한마디:</strong> "처음 가면 약간 긴장되는데, 한 번 적응하면 자꾸 생각나는 곳. 위스키 추천!"</p>
-            <span class="badge">#가성비갑</span>
-            <span class="badge">#분위기최고</span>
-        </div>
-
-        <div class="info-card">
-            <h3>🎤 보이스 라운지</h3>
-            <div class="price-tag">1인 20~30만원</div>
-            <p><strong>분위기:</strong> 라이브 공연 있는 룸싸롱. 노래방 기기 진짜 좋고, 사운드 시스템이 미쳤어.</p>
-            <p><strong>서비스:</strong> 매니저님이 분위기 메이킹 끝내줌. 혼자 와도 외롭지 않은 곳.</p>
-            <p><strong>브로의 한마디:</strong> "친구들끼리 노래방 가려다가 여기 정착함. 3차까지 가기 좋아."</p>
-            <span
+<footer class="q-foot-y1np">
+  <span>&copy; 2026 상수 룸싸롱 가이드. All rights reserved.</span>
+</footer>
 </body>
 </html>
